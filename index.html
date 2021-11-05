@@ -389,10 +389,11 @@
             </button>
 
 
-                <form action="#" class="modal-form">
-                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                    
-                    <div class="modal-form-list">
+            <form action="#" class="modal-form">
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+                <div class="modal-form-list">
+                    <div class="modal-form-contact">
                     <label class="modal-form-field">Имя
                         <span class="modal-form-wrapper">
                             <input type="text" class="modal-form-input" name="user-name" minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" required autofocus  />
@@ -402,7 +403,8 @@
                             </svg>
                         </span>
                     </label>
-
+                    </div>
+                    <div class="modal-form-contact">
                     <label class="modal-form-field">Телефон
                         <span class="modal-form-wrapper">
                             <input type="text" class="modal-form-input" name="tel" title="099-000-00-00" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required />
@@ -412,7 +414,9 @@
                             </svg>
                         </span>
                     </label>
+                    </div>
 
+                    <div class="modal-form-contact">
                     <label class="modal-form-field">Почта
                         <span class="modal-form-wrapper">
                             <input type="text" class="modal-form-input" name="mail" minlength="2" pattern=".+@beststartupever\.com" required />
@@ -422,13 +426,18 @@
                             </svg>
                         </span>
                     </label>
-
-
-
-                        <textarea class="contact-form-message" name="message" placeholder="Введите текст">Комментарий</textarea>
-                        <button type="modal-submit">Отправить</button>
                     </div>
-                </form>
+                    <p class="modal-form-message-title">Комментарий</p>
+                    <textarea class="modal-form-message" name="message" placeholder="Введите текст"></textarea>
+
+                    <!-- <input type="checkbox" id="accept-policy" class="modal-form-checkbox visually-hidden" />
+                    <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
+                        <a href="#"> Условия договора</a>
+                    </label> -->
+
+                    <button class="modal-submit" type="submit">Отправить</button>
+                </div>
+            </form>
             
         </div>
     </div>
