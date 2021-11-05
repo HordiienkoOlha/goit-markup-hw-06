@@ -791,15 +791,13 @@ body {
 
 
 .footer-icon-send {
-  fill: var(--primary-white-color);
+  fill: currentColor;
   vertical-align: middle;
 }
 /* ----------modal-----------------------------------------------*/
 
 .modal-title {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 40px;
+
 
   font-weight: 700;
   font-size: 20px;
