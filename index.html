@@ -419,7 +419,7 @@
                     <div class="modal-form-contact">
                     <label class="modal-form-field">Почта
                         <span class="modal-form-wrapper">
-                            <input type="text" class="modal-form-input" name="mail" minlength="2" pattern=".+@beststartupever\.com" required />
+                            <input type="text" class="modal-form-input" name="mail" minlength="2" required />
                             
                             <svg class="modal-form-icon" width="18" height="18">
                                 <use href="./images/sprite.svg#icon-email-black"></use>
@@ -430,12 +430,17 @@
                     <p class="modal-form-message-title">Комментарий</p>
                     <textarea class="modal-form-message" name="message" placeholder="Введите текст"></textarea>
 
-                    <!-- <input type="checkbox" id="accept-policy" class="modal-form-checkbox visually-hidden" />
-                    <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
-                        <a href="#"> Условия договора</a>
-                    </label> -->
+                    <label for="accept-policy" class="modal-form-checkbox-label">
+                        
+                            <input type="checkbox" id="accept-policy" class="modal-form-checkbox visually-hidden" />
+                            Соглашаюсь с рассылкой и принимаю&nbsp;
+                            <a class="checkbox-conditions" href="#"> Условия договора</a>
+                    </label>
+                            
+                        <div class="modal-conditions">
+                            <button class="modal-submit" type="submit">Отправить</button>
+                        </div>
 
-                    <button class="modal-submit" type="submit">Отправить</button>
                 </div>
             </form>
             
