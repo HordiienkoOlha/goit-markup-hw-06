@@ -319,9 +319,9 @@
         </section>
     </main>
     <footer class=" footer-container">
-        <div class="container">
-            <ul class="footer-list">
-                <li class="footer-left">
+        <div class="container footer-list">
+
+                <div class="footer-left">
                     <a class="webstudio-down link" lang="en" href=""><span class="accent">Web</span>Studio</a>
                     <address class="contacts">
                         <ul class="contacts-list">
@@ -333,8 +333,8 @@
                             </li>
                         </ul>
                     </address>
-                </li>
-                <li class="footer-middle">
+                </div>
+                <div class="footer-middle">
                     <h3 class="footer-text">присоединяйтесь</h3>
                     <ul class="footer-social-list list">
                         <li class="footer-social-item">
@@ -366,8 +366,8 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="footer-last">
+                </div>
+                <div class="footer-last">
                     <h3 class="footer-last-title">Подпишитесь на рассылку</h3>
                     <form class="footer-contact-form">
                         <input class="footer-contact-form-input" name="email" type="email" placeholder="E-mail"/>
@@ -376,10 +376,10 @@
                                     <use href="./images/sprite.svg#icon-send"></use>
                                 </svg></button>
                     </form>
-                </li>
-            </ul>
+                </div>
         </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close>
@@ -427,9 +427,12 @@
                         </span>
                     </label>
                     </div>
-                    <p class="modal-form-message-title">Комментарий</p>
+                    
+                    <label class="modal-form-message-title">Комментарий
                     <textarea class="modal-form-message" name="message" placeholder="Введите текст"></textarea>
+                    </label>
                     <input class="modal-form-checkbox visually-hidden" type="checkbox" id="accept-policy" name="checkbox"/>
+                    
 
                     <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
                             <a class="checkbox-conditions" href="#"> Условия договора</a>
